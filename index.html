@@ -1,0 +1,64 @@
+<html>  
+<head> 
+    <title>Insert title here</title> 
+</head>
+    <body>
+         <script type="text/javascript">
+        function phoxIOS(){
+          var now = new Date().valueOf();
+            setTimeout(function () {
+            if (new Date().valueOf() - now > 10000) return;
+            window.location = "https://droidart.net";
+        }, 5000);
+        window.location = "dart://";
+        };
+    </script>
+        
+        <br/><br/><br/><br/><br/><br/>
+        <a href="photolamusExtended://gallery/pencil_c"><p style="text-align:center">PhotolamusWebViewOnly</a><br/>
+        
+        <a href="market://details?id=com.photolamus.www&url=photolamusExtended://custom-order"><p style="text-align:center">PhotolamusWebView</a><br/>
+    
+        <a href="intent://home/#Intent;scheme=photolamus;package=crztbag.com.photolamus;S.browser_fallback_url=http%3A%2F%2Fphotolamus.com;end"><p style="text-align:center">Photolamus or Market or AppSite </a><br/>
+        
+        <a href="market://details?id=net.droidart&url=droidart://home"><p style="text-align:center">Droidart or Market</a><br/>
+        
+        <a href="market://details?id=net.droidart"><p style="text-align:center">Droidart Market</a><br/>
+        
+        <a href="#" onclick="phoxIOS()"><p style="text-align:center">DroidArt iOS ios</a><br/>
+        
+        
+    </body>  
+</html>
+
+<!--
+curl https://graph.facebook.com/app/app_link_hosts \
+-F access_token="227774420660156|lkaAvwzO7bGxtAMejQzDl-ESaNw" \
+-F name="iOS App Link Photolamus" \
+-F ios=' [
+    {
+      "url" : "photolamus://",
+      "app_store_id" : 1055666767,
+      "app_name" : "Photolamus",
+    },
+  ]' \
+-F android=' [
+    {
+      "url" : "photolamus://home",
+      "package" : "crztbag.com.photolamus",
+      "app_name" : "Photolamus",
+    },
+  ]' \
+-F web=' {
+    "should_fallback" : true,
+  }'
+
+835618916542367
+
+
+curl -G https://graph.facebook.com/835618916542367 \
+-d access_token="227774420660156|lkaAvwzO7bGxtAMejQzDl-ESaNw" \
+-d fields=canonical_url \
+-d pretty=true
+
+https://fb.me/835618916542367 -->
